@@ -4,7 +4,7 @@ import {
   DELETE_STREAM,
   FETCH_ALL_STREAMS,
   EDIT_STREAM
-} from '../components/actions/type';
+} from '../actions/type';
 
 import _ from 'lodash';
 

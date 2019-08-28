@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchAllStreams } from '../actions';
+import { fetchAllStreams } from '../../actions';
 import { Link } from 'react-router-dom';
 
 class StreamList extends Component {
@@ -8,11 +8,13 @@ class StreamList extends Component {
     this.props.fetchAllStreams();
   }
 
-  renderButtons() {
+  renderButtons(id) {
     // if (stream.userId === this.props.currUserId)
     return (
       <div className="right floated content">
-        <button className="ui button primary">Edit</button>
+        <Link className="ui button primary" to={`/streams/edit/${id}`}>
+          Edit
+        </Link>
         <button className="ui button negative">Delete</button>
       </div>
     );
@@ -33,7 +35,7 @@ class StreamList extends Component {
     return this.props.streams.map(stream => {
       return (
         <div className="item" key={stream.id}>
-          {this.renderButtons()}
+          {this.renderButtons(stream.id)}
           <i className="large middle aligned icon camera" />
           <div className="content">
             {stream.title}
