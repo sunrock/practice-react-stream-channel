@@ -1,1 +1,1 @@
-# practice-react-stream-channel
+# Project: React Stream Channel (CRUD)
