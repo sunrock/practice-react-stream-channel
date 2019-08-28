@@ -1,0 +1,14 @@
+{
+  "streams": [
+    {
+      "title": "My First Channel",
+      "description": "001",
+      "id": 1
+    },
+    {
+      "title": "My Second Channel",
+      "description": "002",
+      "id": 2
+    }
+  ]
+}
