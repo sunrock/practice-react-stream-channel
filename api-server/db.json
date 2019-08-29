@@ -1,29 +1,9 @@
 {
   "streams": [
     {
-      "title": "My First Channel",
-      "description": "001",
+      "title": "sss",
+      "description": "111",
       "id": 1
-    },
-    {
-      "title": "My Second Channel",
-      "description": "002",
-      "id": 2
-    },
-    {
-      "title": "Three",
-      "description": "3",
-      "id": 3
-    },
-    {
-      "title": "Three 333",
-      "description": "333",
-      "id": 4
-    },
-    {
-      "title": "Four 4",
-      "description": "444",
-      "id": 5
     }
   ]
 }
