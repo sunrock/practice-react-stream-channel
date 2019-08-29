@@ -14,18 +14,28 @@ class StreamList extends Component {
     // if (stream.userId === this.props.currUserId)
     return (
       <div className="right floated content">
-        <Link className="ui button primary" to={`/streams/edit/${id}`}>
+        <Link
+          className="ui button primary clickable"
+          to={`/streams/edit/${id}`}
+        >
           Edit
         </Link>
-        <button
-          className="ui button negative"
-          onClick={() => this.onDeleteStream(id)}
+        <Link
+          className="ui button negative clickable"
+          to={`/streams/delete/${id}`}
         >
           Delete
-        </button>
+        </Link>
       </div>
     );
   }
+
+  // <button
+  //   className="ui button negative"
+  //   onClick={() => this.onDeleteStream(id)}
+  // >
+  //   Delete
+  // </button>
 
   onDeleteStream(id) {
     this.props.deleteStream(id);

@@ -8,7 +8,6 @@ import StreamDelete from './streams/StreamDelete';
 import StreamEdit from './streams/StreamEdit';
 import StreamShow from './streams/StreamShow';
 
-import './App.css';
 import history from '../history';
 
 const App = () => {

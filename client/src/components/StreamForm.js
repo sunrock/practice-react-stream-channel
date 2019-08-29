@@ -54,7 +54,7 @@ class StreamForm extends Component {
           component={this.renderTextArea}
           label="Description"
         />
-        <button className="ui primary button">Submit</button>
+        <button className="ui primary button clickable">Submit</button>
       </form>
     );
   }
